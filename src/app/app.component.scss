@@ -1,19 +1,90 @@
-*{
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+* {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  #page1{
-    align-items: center;
+.main-container {
+  height: 100%;
+  width: 100%;
+  background: rgb(173, 74, 74);
+  background: linear-gradient(180deg,
+      rgb(207, 82, 82) 14%,
+      rgba(233, 53, 218, 0.807) 98%,
+      rgba(207, 82, 82, 0.877) 14%,
+      rgba(233, 53, 218, 0.807) 98%);
+}
 
+#page1 {
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  height: 100vh;
+  /* Ensures the section is full viewport height */
+}
+
+.page {
+  // border-top: 1px solid red;
+}
+
+#page1>img {
+  min-height: 100%;
+  max-width: 99vw;
+  /* Ensures the image is responsive */
+  max-height: 100vh;
+  /* Prevents the image from overflowing */
+  object-fit: cover;
+  /* Keeps the aspect ratio and fills the container */
+  z-index: 2;
+}
+
+// #page1 ::before {
+//   height: 100vh;
+//   width: 100vw;
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+//   background-image: url(../../public/images/img_1.jpg);
+//   background-size: cover;
+//   background-position: center;
+// }
+
+#page1::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  inset: 0;
+  background-image: url('img_1.jpg');
+  background-size: 190%;
+  background-position: 45% 20%;
+  background-repeat: none;
+  z-index: 1;
+  // opacity: 0.29;
+  // mask-image: url(https://th.bing.com/th?id=OIP.uiRw3v3Lwy4FFtPP5uIhHAHaFD&w=302&h=206&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2);
+  // mask-size: cover;
+  // mask-position: center;
+}
+
+
+#page2>.all-wishes>.wish {
+  border-bottom: 1px solid rgba(217, 255, 0, 0.616);
+  border-bottom-right-radius: 10%;
+  // border-bottom-left-radius: 10%;
+}
+
+#page3 {
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.mosaic-grid{
+  display: grid;
+
+  &>.grid_item{
+    height: 20%;
   }
-  #page1 ::before{
-    height: 100vh;width: 100vw;
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url(../../public/images/img_1.jpg);
-    background-size: cover;
-    background-position: center;
-  }
+}
