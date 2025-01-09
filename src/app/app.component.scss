@@ -21,38 +21,17 @@
 #page1 {
   display: flex;
   justify-content: center;
-  /* Centers horizontally */
   align-items: center;
-  /* Centers vertically */
   height: 100vh;
-  /* Ensures the section is full viewport height */
-}
-
-.page {
-  // border-top: 1px solid red;
 }
 
 #page1>img {
   min-height: 100%;
   max-width: 99vw;
-  /* Ensures the image is responsive */
   max-height: 100vh;
-  /* Prevents the image from overflowing */
   object-fit: cover;
-  /* Keeps the aspect ratio and fills the container */
   z-index: 2;
 }
-
-// #page1 ::before {
-//   height: 100vh;
-//   width: 100vw;
-//   content: "";
-//   position: absolute;
-//   inset: 0;
-//   background-image: url(../../public/images/img_1.jpg);
-//   background-size: cover;
-//   background-position: center;
-// }
 
 #page1::before {
   content: '';
@@ -72,19 +51,32 @@
 
 
 #page2>.all-wishes>.wish {
-  border-bottom: 1px solid rgba(217, 255, 0, 0.616);
+  border-bottom: 2px solid rgb(217, 255, 0);
   border-bottom-right-radius: 10%;
-  // border-bottom-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+
+  background-image: linear-gradient(to bottom, #e935da, #ec34c2, #ea38ac, #e53f99, #d8377f, #d8377f, #d8377f, #e0458c, #e93ba0, #ef32b8, #ef2fd3, #e935f1);
+
+  // background-image: linear-gradient(to bottom, #e935da, #ec34c2, #ea38ac, #e53f99, #d8377f, #eea8c7, rgb(228 132 175), #f08fbb, #e93ba0, #ef32b8, #ef2fd3, #e935f1);
+  color: rgb(0, 0, 0);
+  // text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.wish {
+  font-family: Laura Worthington;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 #page3 {
   background-color: rgba(0, 0, 0, 0.507);
 }
 
-.mosaic-grid{
+.mosaic-grid {
   display: grid;
 
-  &>.grid_item{
+  &>.grid_item {
     height: 20%;
   }
 }
