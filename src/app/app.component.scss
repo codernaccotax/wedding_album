@@ -101,6 +101,7 @@
   // text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
+//tried google font;
 .wish {
   font-family: Laura Worthington;
   font-optical-sizing: auto;
@@ -143,15 +144,6 @@
 
   100% {
     background-image: url(sixth.jpg);
-    // background-image: url(fourth.jpeg);
   }
 
-}
-
-.mosaic-grid {
-  display: grid;
-
-  &>.grid_item {
-    height: 20%;
-  }
 }
