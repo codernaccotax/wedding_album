@@ -5,6 +5,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  ::selection{
+    color: rgba(255, 217, 0, 0.336);
+  }
 }
 
 .main-container {
@@ -43,17 +47,15 @@
 }
 
 .title {
-  // background-color: rgba(0, 247, 255, 0.329);
   position: absolute;
   font-size: 4rem;
   z-index: 3;
-  // color: rgba(255, 217, 0, 0.712);
   background-image: url(for_text.jpeg);
   background-size: cover;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
-  color: rgba(255, 0, 0, 0.644);
+  color: rgba(255, 0, 0, 0.4);
 
   #heart {
     color: red;
@@ -90,15 +92,13 @@
 
 
 #page2>.all-wishes>.wish {
-  border-bottom: 2px solid rgb(217, 255, 0);
+  border-bottom: 1px solid rgb(217, 255, 0);
   border-bottom-right-radius: 10%;
   border-bottom-left-radius: 10%;
-
   background-image: linear-gradient(to bottom, #e935da, #ec34c2, #ea38ac, #e53f99, #d8377f, #d8377f, #d8377f, #e0458c, #e93ba0, #ef32b8, #ef2fd3, #e935f1);
-
   // background-image: linear-gradient(to bottom, #e935da, #ec34c2, #ea38ac, #e53f99, #d8377f, #eea8c7, rgb(228 132 175), #f08fbb, #e93ba0, #ef32b8, #ef2fd3, #e935f1);
   color: rgb(0, 0, 0);
-  // text-shadow: 2px 2px 5px rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
 //tried google font;
@@ -113,11 +113,27 @@
   background-color: rgba(0, 0, 0, 0.507);
   height: 100%;
   width: 100%;
-  animation: changeImage 10s ease infinite;
+  animation: changeImage 1s ease infinite;
+  // animation: changeImage 10s ease infinite;
   background-repeat: none;
   background-position: 50% 20%;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  span{
+    height: 50%;
+    width: 100%;
+    color: red;
+    font-weight: 900;
+    font-size: 2rem;
+    background-color: rgb(255, 217, 0);
 
+    i{
+      color: black;
+    }
+  }
 }
 
 @keyframes changeImage {
