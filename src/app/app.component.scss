@@ -7,7 +7,7 @@
   box-sizing: border-box;
 
   ::selection{
-    color: rgba(255, 217, 0, 0.336);
+    color: rgb(69, 182, 59);
   }
 }
 
@@ -28,6 +28,10 @@
   align-items: center;
   height: 100vh;
   z-index: 1;
+
+  ::selection{
+    color: rgba(255, 217, 0, 0.336);
+  }
 }
 
 .content {
@@ -48,18 +52,14 @@
 
 .title {
   position: absolute;
-  font-size: 4rem;
+  font-size: 5rem;
   z-index: 3;
   background-image: url(for_text.jpeg);
   background-size: cover;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
-  color: rgba(255, 0, 0, 0.4);
-
-  #heart {
-    color: red;
-  }
+  color: rgba(255, 0, 0, 0.767);
 }
 
 #page1>.content::before {
@@ -113,8 +113,8 @@
   background-color: rgba(0, 0, 0, 0.507);
   height: 100%;
   width: 100%;
-  animation: changeImage 1s ease infinite;
-  // animation: changeImage 10s ease infinite;
+  // animation: changeImage 1s ease infinite;
+  animation: changeImage 12s ease infinite;
   background-repeat: none;
   background-position: 50% 20%;
   background-size: cover;
