@@ -8,7 +8,7 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Tuhina';
+  title = 'CNaT';
   x=20*10/100;
   y="Guest List"
 }
